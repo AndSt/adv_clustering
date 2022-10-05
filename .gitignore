@@ -6,5 +6,4 @@ adv_clustering/__pycache__/
 build/
 dist/
 experiments/
-notebooks/
-
+notebooks/.ipynb_checkpoints/
