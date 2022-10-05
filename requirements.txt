@@ -1,0 +1,16 @@
+torch
+gensim
+sklearn
+
+# data libraries
+numpy
+pandas
+joblib
+
+tqdm
+
+# helpers
+absl-py
+
+# slurm-utils itself
+slurm-utils

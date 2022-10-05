@@ -1,0 +1,48 @@
+{
+  "project_name": "adv_clustering",
+  "experiment_name": "event",
+  "run_settings": {
+    "train_file": "train.py",
+    "objective": "accuracy",
+    "print_training_output": true,
+    "hyperparam_algorithm": "grid",
+    "hyperparameter_params": {}
+  },
+  "data": {
+    "local_data_dir": "/Users/andst/synology/phd/datasets/clustering/reproducing/Event/trained",
+    "remote_data_dir": "/storage/stephana93/data/clustering/Event"
+  },
+  "server_settings": {
+    "gateway_script": "/storage/$USER/server_setup/init_gateway.sh",
+    "slurm_script": "/storage/$USER/server_setup/init_slurm.sh",
+    "num_cpu": 2,
+    "mem": 32,
+    "num_gpu": 1
+  },
+  "parameters": [
+    {
+      "name": "debug",
+      "type": "choice",
+      "range": [
+        false
+      ]
+    },
+    {
+      "name": "lr",
+      "type": "choice",
+      "range": [
+        1e-2,
+        2e-2,
+        5e-3,
+        8e-3
+      ]
+    },
+    {
+      "name": "num_epochs",
+      "type": "choice",
+      "range": [
+        40
+      ]
+    }
+  ]
+}
